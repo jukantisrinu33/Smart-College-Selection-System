@@ -1,4 +1,4 @@
-![time line chart](https://github.com/user-attachments/assets/3045be99-8390-4360-be8c-359ce1c47418)
+
 
 # SMART COLLEGE SELECTION SYSTEM
 
@@ -105,7 +105,7 @@ smart-college-selection-system/
 - **Student Dashboard**: Students can register, log in, submit documents, and apply to colleges. They can track the status of their applications.
 
 ## Screenshots
-*(![Screenshot (213)](https://github.com/user-attachments/assets/ebba2755-c2e8-4dd7-9e64-4abda07f73cd)
+![Screenshot (213)](https://github.com/user-attachments/assets/ebba2755-c2e8-4dd7-9e64-4abda07f73cd)
 ![Screenshot (212)](https://github.com/user-attachments/assets/db2d3cfd-7e7a-4384-a5bc-f014c8308638)![Screenshot (214)](https://github.com/user-attachments/assets/d7e2ab68-772f-4b8e-b90e-03193b2bb59f)
 ![Screenshot (215)](https://github.com/user-attachments/assets/c2822a80-9f27-4785-b682-76e8ef51d2dd)
 ![Screenshot (216)](https://github.com/user-attachments/assets/6627ced9-dbc5-448a-986a-f0f393c8031d)
@@ -114,11 +114,5 @@ smart-college-selection-system/
 ![Screenshot (219)](https://github.com/user-attachments/assets/6054d76d-f883-435b-a757-fab917b66f5b)
 
 
-)*
 
 
-## Testing
-*(Unit Testing)*
-
-
-Let me know if there’s anything more you’d like to add or customize!

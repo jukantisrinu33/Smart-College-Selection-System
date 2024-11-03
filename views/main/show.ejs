@@ -1,0 +1,32 @@
+<% layout("/layouts/boilerplate.ejs") %>
+
+<div class="container mt-5">
+  <!-- Student Image Section -->
+  <div class="row justify-content-center">
+    <div class="col-md-4 text-center">
+      <div class="show-Image-parent mb-4">
+        <div class="show-Image">
+          <img src="<%= userPersonalData.passphoto.url %>" alt="Student image" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Student Details Card -->
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card border-0 shadow-lg mb-4">
+        <div class="card-body text-center">
+          <h3 class="card-title mb-3"><%= currUser.name %></h3>
+          <p class="card-text"><strong>Aadharcard Number:</strong> <%= userPersonalData.aadharnumber %></p>
+          <p class="card-text"><strong>Tenth Marks:</strong> <%= userPersonalData.tenthMarks %></p>
+          <p class="card-text"><strong>Twelfth Marks:</strong> <%= userPersonalData.twelthMarks %></p>
+          <p class="card-text"><strong>Caste:</strong> <%= userPersonalData.caste %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Delete Button Section -->
+ 
+</div>

@@ -1,0 +1,200 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<div class="row mt-3 offset-1">
+    <div class="col-8 col-sm-10">
+        <h2>Choose Upto 3 colleges</h2>
+        <form action="/SCSS/applied" class="needs-validation" method="post" novalidate>
+            <% if(applyfor==="jee"){  %>
+                <div class="mb-3 mt-3">
+                    <select class="form-select" aria-label="Default select example" name="college1">
+                        <option selected>select choice 1 college</option>
+                        <option value="Agartala">NIT Agartala</option>
+                        <option value="Allahabad">NIT Allahabad</option>
+                        <option value="Andhrapradesh">NIT Andhra Pradesh</option>
+                        <option value="Arunachal">NIT Arunachal Pradesh</option>
+                        <option value="Bhopal">NIT Bhopal</option>
+                        <option value="Delhi">NIT Delhi</option>
+                        <option value="Goa">NIT Goa</option>
+                        <option value="Hamirpur">NIT Hamirpur</option>
+                        <option value="Imphal">NIT Imphal</option>
+                        <option value="Jaipur">NIT Jaipur</option>
+                        <option value="Jalandhar">NIT Jalandhar</option>
+                        <option value=" Jamshedpur">NIT  Jamshedpur</option>
+                        <option value="Karnataka">NIT Karnataka</option>
+                        <option value="Kurukshetra">NIT Kurukshetra</option>
+                        <option value="Meghalaya">NIT Meghalaya</option>
+                        <option value="Mizoram">NIT Mizoram</option>
+                        <option value="Nagpur">NIT Nagpur</option>
+                        <option value="Patna">NIT Patna</option>
+                        <option value="Puducherry">NIT Puducherry</option>
+                        <option value="Raipur">NIT Raipur</option>
+                        <option value="Rourkela">NIT Rourkela</option>
+                        <option value="Silchar">NIT Silchar</option>
+                        <option value="Sikkim">NIT Sikkim</option>
+                        <option value="Srinagar">NIT Srinagar</option>
+                        <option value="Srinagar2">NIT Srinagar2</option>
+                        <option value="Surat">NIT Surat</option>
+                        <option value="Trichy">NIT Trichy</option>
+                        <option value="Uttarakhand">NIT Uttarakhand</option>
+                        <option value=" Warangal">NIT  Warangal</option>
+                      </select>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" name="college2">
+                        <option selected>select choice 2 college</option>
+                        <option value="Agartala">NIT Agartala</option>
+                        <option value="Allahabad">NIT Allahabad</option>
+                        <option value="Andhrapradesh">NIT Andhra Pradesh</option>
+                        <option value="Arunachal">NIT Arunachal Pradesh</option>
+                        <option value="Bhopal">NIT Bhopal</option>
+                        <option value="Delhi">NIT Delhi</option>
+                        <option value="Goa">NIT Goa</option>
+                        <option value="Hamirpur">NIT Hamirpur</option>
+                        <option value="Imphal">NIT Imphal</option>
+                        <option value="Jaipur">NIT Jaipur</option>
+                        <option value="Jalandhar">NIT Jalandhar</option>
+                        <option value=" Jamshedpur">NIT  Jamshedpur</option>
+                        <option value="Karnataka">NIT Karnataka</option>
+                        <option value="Kurukshetra">NIT Kurukshetra</option>
+                        <option value="Meghalaya">NIT Meghalaya</option>
+                        <option value="Mizoram">NIT Mizoram</option>
+                        <option value="Nagpur">NIT Nagpur</option>
+                        <option value="Patna">NIT Patna</option>
+                        <option value="Puducherry">NIT Puducherry</option>
+                        <option value="Raipur">NIT Raipur</option>
+                        <option value="Rourkela">NIT Rourkela</option>
+                        <option value="Silchar">NIT Silchar</option>
+                        <option value="Sikkim">NIT Sikkim</option>
+                        <option value="Srinagar">NIT Srinagar</option>
+                        <option value="Srinagar2">NIT Srinagar2</option>
+                        <option value="Surat">NIT Surat</option>
+                        <option value="Trichy">NIT Trichy</option>
+                        <option value="Uttarakhand">NIT Uttarakhand</option>
+                        <option value=" Warangal">NIT  Warangal</option>
+                      </select>
+                </div>
+              
+                <div class="mb-3 mt-3">
+                    <select class="form-select" aria-label="Default select example" name="college3">
+                        <option selected>select choice 3 college</option>
+                        <option value="Agartala">NIT Agartala</option>
+                        <option value="Allahabad">NIT Allahabad</option>
+                        <option value="Andhrapradesh">NIT Andhra Pradesh</option>
+                        <option value="Arunachal">NIT Arunachal Pradesh</option>
+                        <option value="Bhopal">NIT Bhopal</option>
+                        <option value="Delhi">NIT Delhi</option>
+                        <option value="Goa">NIT Goa</option>
+                        <option value="Hamirpur">NIT Hamirpur</option>
+                        <option value="Imphal">NIT Imphal</option>
+                        <option value="Jaipur">NIT Jaipur</option>
+                        <option value="Jalandhar">NIT Jalandhar</option>
+                        <option value=" Jamshedpur">NIT  Jamshedpur</option>
+                        <option value="Karnataka">NIT Karnataka</option>
+                        <option value="Kurukshetra">NIT Kurukshetra</option>
+                        <option value="Meghalaya">NIT Meghalaya</option>
+                        <option value="Mizoram">NIT Mizoram</option>
+                        <option value="Nagpur">NIT Nagpur</option>
+                        <option value="Patna">NIT Patna</option>
+                        <option value="Puducherry">NIT Puducherry</option>
+                        <option value="Raipur">NIT Raipur</option>
+                        <option value="Rourkela">NIT Rourkela</option>
+                        <option value="Silchar">NIT Silchar</option>
+                        <option value="Sikkim">NIT Sikkim</option>
+                        <option value="Srinagar">NIT Srinagar</option>
+                        <option value="Srinagar2">NIT Srinagar2</option>
+                        <option value="Surat">NIT Surat</option>
+                        <option value="Trichy">NIT Trichy</option>
+                        <option value="Uttarakhand">NIT Uttarakhand</option>
+                        <option value=" Warangal">NIT  Warangal</option>
+                      </select>
+                </div>
+              <% } %>
+              
+              <% if(applyfor==="advanced"){  %>
+                <div class="mb-3 mt-3">
+                    <select class="form-select" aria-label="Default select example" name="college1">
+                        <option selected>Select choice 1 college</option>
+                        <option value="Bombay">IIT Bombay</option>
+                        <option value="Delhi">IIT Delhi</option>
+                        <option value="Guwahati">IIT Guwahati</option>
+                        <option value="Kanpur">IIT Kanpur</option>
+                        <option value="Kharagpur">IIT Kharagpur</option>
+                        <option value="Madras">IIT Madras</option>
+                        <option value="Roorkee">IIT Roorkee</option>
+                        <option value="Bhubaneswar">IIT Bhubaneswar</option>
+                        <option value="Gandhinagar">IIT Gandhinagar</option>
+                        <option value="Hyderabad">IIT Hyderabad</option>
+                        <option value="Indore">IIT Indore</option>
+                        <option value="Jodhpur">IIT Jodhpur</option>
+                        <option value="Mandi">IIT Mandi</option>
+                        <option value="Patna">IIT Patna</option>
+                        <option value="Ropar">IIT Ropar</option>
+                        <option value="Palakkad">IIT Palakkad</option>
+                        <option value="Goa">IIT Goa</option>
+                        <option value="Jammu">IIT Jammu</option>
+                        <option value="Dharwad">IIT Dharwad</option>
+                        <option value="Dhanbad">IIT Dhanbad</option>
+                        <option value="Bhilai">IIT Bhilai</option>
+                        <option value="Tirupati">IIT Tirupati</option>
+                    </select>
+                </div>
+              
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" name="college2">
+                        <option selected>select choice 2 college</option>
+                        <option value="Bombay">IIT Bombay</option>
+                        <option value="Delhi">IIT Delhi</option>
+                        <option value="Guwahati">IIT Guwahati</option>
+                        <option value="Kanpur">IIT Kanpur</option>
+                        <option value="Kharagpur">IIT Kharagpur</option>
+                        <option value="Madras">IIT Madras</option>
+                        <option value="Roorkee">IIT Roorkee</option>
+                        <option value="Bhubaneswar">IIT Bhubaneswar</option>
+                        <option value="Gandhinagar">IIT Gandhinagar</option>
+                        <option value="Hyderabad">IIT Hyderabad</option>
+                        <option value="Indore">IIT Indore</option>
+                        <option value="Jodhpur">IIT Jodhpur</option>
+                        <option value="Mandi">IIT Mandi</option>
+                        <option value="Patna">IIT Patna</option>
+                        <option value="Ropar">IIT Ropar</option>
+                        <option value="Palakkad">IIT Palakkad</option>
+                        <option value="Goa">IIT Goa</option>
+                        <option value="Jammu">IIT Jammu</option>
+                        <option value="Dharwad">IIT Dharwad</option>
+                        <option value="Dhanbad">IIT Dhanbad</option>
+                        <option value="Bhilai">IIT Bhilai</option>
+                        <option value="Tirupati">IIT Tirupati</option>
+                    </select>
+                </div>
+              
+                <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example" name="college3">
+                        <option selected>select choice 3 college</option>
+                        <option value="Bombay">IIT Bombay</option>
+                        <option value="Delhi">IIT Delhi</option>
+                        <option value="Guwahati">IIT Guwahati</option>
+                        <option value="Kanpur">IIT Kanpur</option>
+                        <option value="Kharagpur">IIT Kharagpur</option>
+                        <option value="Madras">IIT Madras</option>
+                        <option value="Roorkee">IIT Roorkee</option>
+                        <option value="Bhubaneswar">IIT Bhubaneswar</option>
+                        <option value="Gandhinagar">IIT Gandhinagar</option>
+                        <option value="Hyderabad">IIT Hyderabad</option>
+                        <option value="Indore">IIT Indore</option>
+                        <option value="Jodhpur">IIT Jodhpur</option>
+                        <option value="Mandi">IIT Mandi</option>
+                        <option value="Patna">IIT Patna</option>
+                        <option value="Ropar">IIT Ropar</option>
+                        <option value="Palakkad">IIT Palakkad</option>
+                        <option value="Goa">IIT Goa</option>
+                        <option value="Jammu">IIT Jammu</option>
+                        <option value="Dharwad">IIT Dharwad</option>
+                        <option value="Dhanbad">IIT Dhanbad</option>
+                        <option value="Bhilai">IIT Bhilai</option>
+                        <option value="Tirupati">IIT Tirupati</option>
+                    </select>
+                </div>
+              <% } %>
+            <button class="btn btn-primary mt-3 mb-4" > Apply for college</button>
+        </form>
+    </div>
+</div>

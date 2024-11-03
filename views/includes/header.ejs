@@ -1,0 +1,49 @@
+
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fa-solid fa-graduation-cap"></i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="/SCSS">Home</a>
+              <% if(currUser){  %>
+                <a class="nav-link" href="/SCSS/Apply">Apply for college</a>
+              <% } %>
+              
+
+
+              <% if(currUser){  %>
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Documents
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="/SCSS/documents/new">Add Documents</a></li>
+                    <li><a class="dropdown-item" href="/SCSS/documents/update">Update Documents</a></li>
+                    <li><a class="dropdown-item" href="/SCSS/viewDocuments">View Documents</a></li>
+                  </ul>
+                </div>
+
+              <% } %>
+            </div>
+            <div class="navbar-nav ms-auto">
+                <% if(!currUser){  %>
+                  <a href="/login" class="nav-link">Login</a>
+                  <a href="/signup" class="nav-link">Signup</a>
+                <% } %>
+                <% if(currUser){ %>
+                  <form action="/deleteuser?_method=delete" method="post">
+                    <button class="btn" id="delete">Delete Account</button>
+                  </form>
+                  <a href="/logout" class="nav-link">logout</a>
+                <% } %>
+
+
+            </div>
+          </div>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,134 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<div class="row mt-3 offset-1">
+    <div class="col-8 col-sm-10">
+        <form action="/SCSS/documents/new" method="post" class="needs-validation" enctype="multipart/form-data">
+
+            <h3 class="mb-4">Documents Submission</h3>
+            
+            <div class="row row-cols-lg-2 row-cols-md-2 ">
+
+                <div class="mb-3">
+                    <label for="aadharnumber" class="form-label">AADHAR CARD NUMBER</label>
+                    <input type="number" name="aadharnumber" id="aadharnumber" required class="form-control" placeholder="0000 0000 0000" minlength="12" maxlength="12">
+                    <div class="invalid-feedback">
+                        Please enter a valid Aadhar Number.
+                      </div>
+                </div>
+    
+    
+                <div class="mb-3">
+                    <label for="tenthMarks" class="form-label">TENTH MARKS</label>
+                    <input type="text" name="tenthMarks" id="tenthMarks" required class="form-control" placeholder="9.3 or 879">
+                    <div class="invalid-feedback">
+                        Please enter a valid tenth Marks.
+                      </div>
+                </div>
+    
+                
+                <div class="mb-3">
+                    <label for="twelthMarks" class="form-label">TWELTH MARKS/ +2 MARKS</label>
+                    <input type="number" name="twelthMarks" id="twelthMarks" required class="form-control" placeholder="879">
+                    <div class="invalid-feedback">
+                        Please enter a valid twelth Marks.
+                      </div>
+                </div>
+    
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="caste">
+                      <option value="sc">SC</option>
+                      <option value="st">ST</option>
+                      <option value="obc">OBC</option>
+                      <option value="general" selected>GENERAL</option>
+                    </select>
+                    <label for="floatingSelect" style="margin-left: 2vh;">CASTE</label>
+                  </div>
+    
+
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="passphoto" class="form-label">PASSPHOTO</label>
+                <input type="file" name="passphoto" id="passphoto" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+
+            <div class="mb-3">
+                <label for="aadharImage" class="form-label">AADHARCARD IMAGE</label>
+                <input type="file" name="aadharImage" id="aadharImage" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+          
+
+            
+
+            <div class="mb-3">
+                <label for="tenthImage" class="form-label">TENTH MARK SHEET</label>
+                <input type="file" name="tenthImage" id="tenthImage" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            
+
+            <div class="mb-3">
+                <label for="twelthImage" class="form-label">TWELTH/ +2 MARKS SHEET</label>
+                <input type="file" name="twelthImage" id="twelthImage" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+
+              
+            <div class="mb-3">
+                <label for="casteImage" class="form-label">CASTE CERTIFICATE</label>
+                <input type="file" name="casteImage" id="casteImage" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="physicallyHandicaped" class="form-label">PHYSICALLY HANDICAPED (OPTIONAL)</label>
+                <input type="file" name="physicallyHandicaped" id="physicallyHandicaped" class="form-control" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="jeeScore" class="form-label">JEE SCORE</label >
+                <input type="text" name="jeeScore" id="jeeScore" class="form-control" placeholder="2300" required>
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            <p>Apply for</p>
+            <select class="form-select mb-3" aria-label="Default select example" name="applyfor" required>
+
+                <option value="jee" selected>jee</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <form action="/SCSS/documents/new" method="post" >
+                <button class="btn btn-primary mt-3 mb-4" > Submit</button>
+            </form>
+        </form>
+    </div>
+</div>

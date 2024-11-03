@@ -1,0 +1,143 @@
+<%layout("/layouts/boilerplate.ejs")%>
+<div class="row mt-3 offset-1">
+    <div class="col-8 col-sm-10">
+        <form action="/SCSS/documents/update?_method=put" method="post" class="needs-validation" novalidate enctype="multipart/form-data">
+
+            <h3 class="mb-4">Documents Updation</h3>
+            
+            <div class="row row-cols-lg-2 row-cols-md-2 ">
+
+                <div class="mb-3">
+                    <label for="aadharnumber" class="form-label">AadharCard Number</label>
+                    <input type="number" name="aadharnumber" id="aadharnumber" required class="form-control" 
+                    placeholder="0000 0000 0000" minlength="12" maxlength="12" value="<%= userPersonalData.aadharnumber %>">
+                    <div class="invalid-feedback">
+                        Please enter a valid Aadhar Number.
+                      </div>
+                </div>
+    
+    
+                <div class="mb-3">
+                    <label for="tenthMarks" class="form-label">Tenth Marks</label>
+                    <input type="text" name="tenthMarks" id="tenthMarks" required class="form-control" 
+                    placeholder="9.3 or 879" value="<%= userPersonalData.tenthMarks %>">
+                    <div class="invalid-feedback">
+                        Please enter a valid tenth Marks.
+                      </div>
+                </div>
+    
+                
+                <div class="mb-3">
+                    <label for="twelthMarks" class="form-label">Twelth Marks</label>
+                    <input type="number" name="twelthMarks" id="twelthMarks" required class="form-control"
+                     placeholder="879" value="<%= userPersonalData.twelthMarks %>">
+                    <div class="invalid-feedback">
+                        Please enter a valid twelth Marks.
+                      </div>
+                </div>
+    
+                <div class="form-floating mb-3">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example" name="caste">
+                      <option value="sc">SC</option>
+                      <option value="st">ST</option>
+                      <option value="obc">OBC</option>
+                      <option value="general" selected>GENERAL</option>
+                    </select>
+                    <label for="floatingSelect" style="margin-left: 2vh;">Caste</label>
+                  </div>
+    
+
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="passphoto" class="form-label">passphoto Image</label>
+                <input type="file" name="passphoto" id="passphoto" class="form-control"
+                value="<%= userPersonalData.passphoto %>" placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+
+            <div class="mb-3">
+                <label for="aadharImage" class="form-label">AadharCard Image</label>
+                <input type="file" name="aadharImage" id="aadharImage" class="form-control" 
+                placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+          
+
+            
+
+            <div class="mb-3">
+                <label for="tenthImage" class="form-label">Tenth Image</label>
+                <input type="file" name="tenthImage" id="tenthImage" class="form-control" 
+                placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            
+
+            <div class="mb-3">
+                <label for="twelthImage" class="form-label">Twelth Image</label>
+                <input type="file" name="twelthImage" id="twelthImage" class="form-control"
+                placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+
+              
+            <div class="mb-3">
+                <label for="casteImage" class="form-label">casteImage</label>
+                <input type="file" name="casteImage" id="casteImage" class="form-control"
+                placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+
+
+            <div class="mb-3">
+                <label for="physicallyHandicaped" class="form-label">physically Handicaped</label>
+                <input type="file" name="physicallyHandicaped" id="physicallyHandicaped" class="form-control" 
+                placeholder=".jpg/png only" >
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="jeeScore" class="form-label">jeeScore</label>
+                <input type="text" name="jeeScore" id="jeeScore" class="form-control" placeholder="Enter Score" 
+                value="<%= userPersonalData.jeeScore %>" required>
+                <div class="invalid-feedback">
+                    Please Upload photo
+                  </div>
+            </div>
+
+            <p>Apply for</p>
+            <select class="form-select mb-3" aria-label="Default select example" name="applyfor" required>
+                <option value="jee" selected>jee</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <form action="" method="post" >
+                <button class="btn btn-primary mt-3 mb-4" > Update my Profile</button>
+            </form>
+        </form>
+    </div>
+</div>

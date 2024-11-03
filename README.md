@@ -31,11 +31,10 @@
 ```
 smart-college-selection-system/
 ├── controllers/
-│   ├── applications.js
-│   ├── auth.js
-│   ├── users.js
+│   ├── personals.js
+│   ├── user.js
 ├── models/
-│   ├── application.js
+│   ├── personals.js
 │   ├── user.js
 │── public/
 │   ├── css/
@@ -43,29 +42,33 @@ smart-college-selection-system/
 │   ├── js/
 │   │   ├── script.js
 ├── routes/
-│   ├── applications.js
-│   ├── auth.js
-│   ├── users.js
+│   ├── personals.js
+│   ├── user.js
 ├── views/
 │   ├── includes/
+|   |   ├── colleges.ejs
+|   |   ├── flash.ejs
 │   │   ├── header.ejs
 │   │   ├── footer.ejs
 │   ├── layouts/
-│   │   ├── main.ejs
-│   ├── applications/
-│   │   ├── apply.ejs
-│   │   ├── status.ejs
+│   │   ├── boilerplate.ejs
+│   ├── main/
+│   │   ├── error.ejs
+│   │   ├── Home.ejs
+|   |   ├── show.ejs
 │   ├── users/
 │   │   ├── login.ejs
 │   │   ├── register.ejs
-│   ├── home.ejs
-│   ├── error.ejs
-├── app.js
-├── config.js
-├── middleware.js
+|   ├── personals/
+|   |   ├── Apply.ejs
+|   |   ├── new.ejs
+|   |   ├── Update.ejs
+├── index.js
+├── CloudConfig.js
+├── .gitignore
 ├── package-lock.json
 ├── package.json
-├── README.md
+├── Schema.js
 ```
 
 ## Installation
